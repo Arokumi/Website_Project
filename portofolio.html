@@ -12,7 +12,6 @@
 <body style="background-color:rgb(246, 246, 246);">
     <!-- This will be the header -->
     <Header class="topnav">
-        <!-- nav menu -->
 
         <nav class="navbar">
             <ul class="header_nav">
@@ -33,18 +32,18 @@
                 <div class="col-lg m-5" style="background-color:rgb(246, 246, 246); outline: solid; outline-width: 1px; outline-color: #d9d8d8 ;border-radius: 20px; box-shadow: 0px 8px 5px #d9d8d8;">
                     <div style="text-align:center;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png" alt="" width="40%" height="40%" style="margin: auto;"></div>
                     <div style="margin: auto; text-align: center;" id="Pname">Jack Daniels</div>
-                    <div style="margin: auto; text-align: center;">Occupation</div>
-                    <div style="margin: auto; text-align: center;">Description</div>
-                    <button onclick="togglePopup()" class="editButton">Edit Profile</button>
+                    <div style="margin: auto; text-align: center;" id="Poccupation">Occupation</div>
+                    <div style="margin: auto; text-align: center;" id="Pdescription">Description</div>
+                    <button onclick="toggleEdit()" class="editButton">Edit Profile</button>
                 </div>
                 <div class="col-lg m-5" style="background-color:rgb(246, 246, 246); outline: solid; outline-width: 1px; outline-color: #d9d8d8 ;border-radius: 20px; box-shadow: 0px 8px 5px #d9d8d8;">
                     <ul>
-                        <li>Availability: <m>Part-Time</m></li>
-                        <li>Age: <m>17</m></li>
-                        <li>Location: <m>South Jakarta</m></li>
-                        <li>Experience: <m>2 Months</m></li>
-                        <li>Email: <m>scockers@cmail.com</m></li>
-                        <li>Number: <m>+62119327810</m></li>
+                        <li>Availability: <m id="Pavailability"></m></li>
+                        <li>Age: <m id="Page">17</m></li>
+                        <li>Location: <m id="Plocation">South Jakarta</m></li>
+                        <li>Experience: <m id="Pexperience">2 Months</m></li>
+                        <li>Email: <m id="Pemail">scockers@cmail.com</m></li>
+                        <li>Number: <m id="Pnumber">62119327810</m></li>
                     </ul>
                 </div>
             </div>
@@ -55,37 +54,37 @@
         <div class="content">
             <form action="" class="editForm" onsubmit="submitFn()">
                 <label for="username">Username</label><br>
-                <input type="text" name="username" id="username"><br>
-                <p id="test"></p>
+                <input type="text" name="username" id="username"><br><br>
     
                 <label for="occupation">Occupation</label><br>
-                <input type="text" name="occupation" id="occupation"><br>
+                <input type="text" name="occupation" id="occupation"><br><br>
     
                 <label for="description">Description</label><br>
-                <input type="text" name="description" id="description"><br>
+                <input type="text" name="description" id="description"><br><br>
     
                 <label for="availability">Availability</label><br>
-                <input type="radio" name="availability" id="availability" value="Full-Time"> Full-Time<br>
-                <input type="radio" name="availability" id="availability" value="Part-Time"> Part-Time<br>
+                <input type="radio" name="availability" id="availabilityFull" value="full"> Full-Time<br>
+                <input type="radio" name="availability" id="availabilityPart" value="part"> Part-Time<br><br>
     
                 <label for="age">Age</label><br>
-                <input type="number" name="age" id="age"><br>
+                <input type="number" name="age" id="age"><br><br>
     
                 <label for="location">Location</label><br>
-                <input type="text" name="location" id="location"><br>
+                <input type="text" name="location" id="location"><br><br>
     
                 <label for="experience">Experience</label><br>
-                <input type="text" name="experience" id="experience"><br>
+                <input type="text" name="experience" id="experience"><br><br>
     
                 <label for="email">Email</label><br>
-                <input type="email" name="email" id="email"><br>
+                <input type="email" name="email" id="email"><br><br>
     
-                <label for="pnumber">Phone Number</label><br>
-                <input type="number" name="pnumber" id="pnumber"><br>
+                <label for="number">Phone Number</label><br>
+                <input type="number" name="number" id="number"><br><br>
     
-                <input type="submit" value="Submit" onclick="submitData()" class="closeBtn">
+                <input class="close-btn" type="submit" value="Submit" class="closeBtn">
             </form>
         </div>
     </div>
+
     <script src="main.js"></script>
 </body>
