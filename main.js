@@ -1,7 +1,3 @@
-// function submitData() {
-//     let name = document.getElementById('username').value;
-//     document.getElementsByClassName('username').innerHTML = name;
-// };
 function toggleEdit(){
     document.getElementById("popup-1").classList.toggle("active");
 }
